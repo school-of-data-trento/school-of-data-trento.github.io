@@ -1,0 +1,60 @@
+@import url(http://fonts.googleapis.com/css?family=Exo:400,800);
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Exo', sans-serif;
+    font-weight: 800;
+}
+h1 {
+    font-size: 100px;
+    margin: 0;
+}
+h1 small {
+    font-weight: normal;
+}
+.main-header {
+    background: #111;
+    color: #ddd;
+    text-align: center;
+    padding: 20px 0;
+}
+.main-nav {
+    background: #333;
+}
+.main-nav a {
+    color: #fff;
+}
+.main-nav .nav > li > a:hover,
+.main-nav .nav > li > a:focus {
+    background: #444;
+}
+.main-footer {
+    /* margin-top: 20px; */
+    background: #111;
+    border-top: solid 10px #333;
+    color: #ddd;
+    padding: 10px 0;
+}
+section {
+    padding: 10px 0;
+}
+section:nth-child(4n+0) {
+    background: #eee;
+}
+section:nth-child(2n+1) {
+    background: #e8e8e8;
+}
+section:nth-child(4n+2) {
+    background: #e0e0e0;
+}
+/* section:nth-child(4n+0) { */
+/*     background: #e0e0d8; */
+/* } */
+/* section:nth-child(4n+1) { */
+/*     background: #e8e8e0; */
+/* } */
+/* section:nth-child(4n+2) { */
+/*     background: #f0f0e8; */
+/* } */
+/* section:nth-child(4n+3) { */
+/*     background: #f8f8f0; */
+/* } */
