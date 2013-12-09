@@ -1,22 +1,64 @@
 @import url(http://fonts.googleapis.com/css?family=Exo:400,800);
 
+body {
+    /* background: #fff url(img/grid.png); */
+    background: #ddd;
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Exo', sans-serif;
     font-weight: 800;
 }
-h1 {
-    font-size: 100px;
-    margin: 0;
-}
 h1 small {
     font-weight: normal;
 }
+a {
+    transition: color ease 1s, background ease 1s;
+}
+
 .main-header {
-    background: #111;
+    background: #000 url(img/slate.jpg) no-repeat center center;
     color: #ddd;
     text-align: center;
     padding: 20px 0;
+    font-family: 'Exo', sans-serif;
+    font-weight: 400;
 }
+.main-header h1 {
+    font-size: 90px;
+    margin: 0;
+}
+.main-header strong {
+    font-weight: 800;
+}
+.main-header .subtitle {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    color: #ccc;
+}
+.main-header .subtitle strong {
+    color: #777;
+}
+
+
+.main-header * {
+    transition: color ease 10s;
+}
+.main-header:hover h1 {
+    color: #EEEECC;
+}
+.main-header:hover .subtitle {
+    color: #EEEECC;
+}
+.main-header:hover .subtitle strong {
+    color: #A1C0E6;
+}
+.main-header:hover h1 small {
+    color: #A1C0E6;
+}
+
+
+
 .main-nav {
     background: #333;
 }
@@ -26,6 +68,7 @@ h1 small {
 .main-nav .nav > li > a:hover,
 .main-nav .nav > li > a:focus {
     background: #444;
+    border-radius: 0;
 }
 .main-footer {
     /* margin-top: 20px; */
@@ -33,28 +76,74 @@ h1 small {
     border-top: solid 10px #333;
     color: #ddd;
     padding: 10px 0;
+    margin-top: 20px;
 }
+
 section {
     padding: 10px 0;
+    /* background: #f8f8f8; */
+    /* border-bottom: dashed 1px #ccc; */
 }
-section:nth-child(4n+0) {
-    background: #eee;
+section.first {
+    background: #fff;
+    box-shadow: rgba(0,0,0,.2) 0 10px 10px;
+    margin-bottom: 20px;
 }
-section:nth-child(2n+1) {
-    background: #e8e8e8;
+section:not(.first) > .container {
+    background: #f8f8f8 url(img/grid.png) -1px -1px;
+    border: solid 1px #eee;
+    box-shadow: rgba(0,0,0,.2) 3px 3px 15px;
+    padding: 20px 40px;
 }
-section:nth-child(4n+2) {
-    background: #e0e0e0;
-}
-/* section:nth-child(4n+0) { */
-/*     background: #e0e0d8; */
+/* section:not(.first) > .container { */
+/*     background: rgba(255, 255, 255, .4); */
+/*     box-shadow: rgba(0,0,0,.2) 2px 2px 10px; */
 /* } */
-/* section:nth-child(4n+1) { */
-/*     background: #e8e8e0; */
+
+
+/* section:nth-child(4n+0) { */
+/*     background: #eee; */
+/* } */
+/* section:nth-child(2n+1) { */
+/*     background: #e8e8e8; */
 /* } */
 /* section:nth-child(4n+2) { */
-/*     background: #f0f0e8; */
+/*     background: #e0e0e0; */
 /* } */
-/* section:nth-child(4n+3) { */
-/*     background: #f8f8f0; */
+/* section.first { */
+/*     background: #fff; */
 /* } */
+/* a.back-to-top { */
+/*     border: solid 1px #aaa; */
+/*     border-bottom: none; */
+/*     padding: 10px 40px; */
+/*     border-top-left-radius: 200px 80px; */
+/*     border-top-right-radius: 200px 80px; */
+/* } */
+/* a.back-to-top:hover { */
+/*     background: #eee; */
+/* } */
+.back-to-top {
+    text-align: right;
+}
+
+.comic-dialog {
+    background: #6C9ED9;
+    color: #fff;
+    padding: 20px 30px;
+    margin-bottom: 25px;
+    text-shadow: rgba(0,0,0,.5) 1px 1px 1px;
+    border-radius: 5px;
+    font-size: 150%;
+}
+.comic-dialog:after {
+    border-bottom: 20px solid rgba(0, 0, 0, 0);
+    border-left: 35px solid #6C9ED9;
+    border-top: 0 solid rgba(0, 0, 0, 0);
+    bottom: 6px;
+    content: " ";
+    height: 0;
+    left: 45px;
+    position: absolute;
+    width: 0;
+}
