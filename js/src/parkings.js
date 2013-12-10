@@ -1,6 +1,7 @@
 // parking icon from Open SVG Map Icons
 // by L. Delucchi
 // https://github.com/lucadelu/Open-SVG-Map-Icons
+//------------------------------------------------------------
 
 var parkingIcon = L.icon({
     iconUrl: 'img/parking_32x32.png',
@@ -21,7 +22,8 @@ var minimal = L.tileLayer(cloudmadeUrl, {
 var map = L.map('map_canvas', {
     center: new L.LatLng(46.0690555,11.1275797),
     zoom: 15,
-    layers: [minimal]
+    layers: [minimal],
+    scrollWheelZoom: false
 });
 
 // var ggl = new L.Google();
