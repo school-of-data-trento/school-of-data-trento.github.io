@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 small {
     font-weight: normal;
 }
-a:hover {
+a {
     transition: color ease 1s, background ease 1s;
 }
 
@@ -43,6 +43,9 @@ a:hover {
 }
 
 
+.main-header {
+    color: #fff;
+}
 .main-header * {
     transition: color ease 10s;
 }
