@@ -18,7 +18,7 @@ a:hover {
 }
 
 .main-header {
-    background: #000 url(img/slate.jpg) no-repeat center center;
+    background: #000 url(img/slate.jpg) repeat-y center center;
     color: #ddd;
     text-align: center;
     padding: 20px 0;
@@ -159,7 +159,8 @@ section:not(.first) > .container > h2:first-of-type {
 
 .comic-dialog {
     /* background: #6C9ED9; */
-    background: #0B9ABB;
+    /* background: #0B9ABB; */
+    background: #89B4BE;
     color: #fff;
     padding: 10px 20px;
     margin-bottom: 30px;
@@ -171,7 +172,8 @@ section:not(.first) > .container > h2:first-of-type {
 .comic-dialog:after {
     border-bottom: 20px solid rgba(0, 0, 0, 0);
     /* border-left: 35px solid #6C9ED9; */
-    border-left: 35px solid #0B9ABB;
+    /* border-left: 35px solid #0B9ABB; */
+    border-left: 35px solid #89B4BE;
     border-top: 0 solid rgba(0, 0, 0, 0);
     bottom: -20px;
     content: " ";
