@@ -1,8 +1,10 @@
-@import url(http://fonts.googleapis.com/css?family=Exo:400,800);
+@import url(http://fonts.googleapis.com/css?family=Exo:400,800|Droid+Sans);
 
 body {
     /* background: #fff url(img/grid.png); */
     background: #ddd;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: 400;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Exo', sans-serif;
