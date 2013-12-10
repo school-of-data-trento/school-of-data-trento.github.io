@@ -185,3 +185,45 @@ section:not(.first) > .container > h2:first-of-type {
     position: absolute;
     width: 0;
 }
+
+table.table-talks > tbody > tr > td:first-child {
+    width: 120px;
+}
+table.table-talks > tbody > tr > td:last-child {
+    width: 160px;
+}
+/* table.table-talks > tbody > tr > td:last-child > .box { */
+/*     background: #00f; */
+/*     border-color: #00f; */
+/*     color: #fff; */
+/*     width: 160px; */
+/*     padding-top: 20px; */
+/*     vertical-align: middle; */
+/*     text-align: center; */
+/*     position: relative; */
+/*     height: 100%; */
+/* } */
+/* table.table-talks > tbody > tr:not(:last-child) > td:last-child > .box:after { */
+/*     border-top: solid 20px #00f; */
+/*     border-left: solid 81px rgba(0, 0, 0, 0); */
+/*     border-right: solid 81px rgba(0, 0, 0, 0); */
+/*     position: absolute; */
+/*     bottom: -40px; */
+/*     left: -1px; */
+/*     z-index: 10; */
+/*     content: " "; */
+/* } */
+
+
+/* table.table-talks > tbody > tr:nth-child(10n+1) > td:last-child {background: #f00;} */
+/* table.table-talks > tbody > tr:nth-child(10n+1) > td:last-child:after {border-top-color: #f00;} */
+
+/* table.table-talks > tbody > tr:nth-child(10n+2) > td:last-child {background: #ff0; color: #000;} */
+/* table.table-talks > tbody > tr:nth-child(10n+2) > td:last-child:after {border-top-color: #ff0;} */
+
+/* table.table-talks > tbody > tr:nth-child(10n+3) > td:last-child {background: #0f0; color: #000;} */
+/* table.table-talks > tbody > tr:nth-child(10n+3) > td:last-child:after {border-top-color: #0f0;} */
+
+.table-talks .talk-title {
+    font-weight: bold;
+}
