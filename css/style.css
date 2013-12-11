@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Exo:400,800|Droid+Sans);
 
 body {
-    background: #ddd;
+    background: #ddd url(../img/linen-gray.jpg);
     font-family: 'Droid Sans', sans-serif;
     font-weight: 400;
 }
@@ -46,7 +46,9 @@ a {
     color: #fff;
 }
 .main-header h1,
-.main-header .subtitle {
+.main-header h1 small,
+.main-header .subtitle,
+.main-header .subtitle strong {
     transition: color ease 10s;
 }
 .main-header:hover h1 {
@@ -162,7 +164,7 @@ section:not(.first) > .container > h2:first-of-type:hover {
     /* background: #0B9ABB; */
     /* background: #89B4BE; */
     /* background: #888; */
-    background: #aaa;
+    background: #777;
     color: #fff;
     padding: 10px 30px;
     text-shadow: rgba(0,0,0,.8) 1px 1px 2px;
@@ -182,14 +184,14 @@ section:not(.first) > .container > h2:first-of-type:hover {
     text-align: left;
 }
 .comic-dialog:nth-child(odd):after {
-    border-left: 35px solid #aaa;
+    border-left: 35px solid #777;
     left: 45px;
 }
 .comic-dialog:nth-child(even) {
     text-align: right;
 }
 .comic-dialog:nth-child(even):after {
-    border-right: 35px solid #aaa;
+    border-right: 35px solid #777;
     right: 45px;
 }
 
