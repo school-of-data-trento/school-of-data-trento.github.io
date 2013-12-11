@@ -1,7 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Exo:400,800|Droid+Sans);
 
 body {
-    /* background: #fff url(img/grid.png); */
     background: #ddd;
     font-family: 'Droid Sans', sans-serif;
     font-weight: 400;
@@ -164,7 +163,8 @@ section:not(.first) > .container > h2:first-of-type {
 .comic-dialog {
     /* background: #6C9ED9; */
     /* background: #0B9ABB; */
-    background: #89B4BE;
+    /* background: #89B4BE; */
+    background: #888;
     color: #fff;
     padding: 10px 20px;
     margin-bottom: 30px;
@@ -172,19 +172,32 @@ section:not(.first) > .container > h2:first-of-type {
     border-radius: 5px;
     position: relative;
     /* font-size: 150%; */
+    margin-top: 20px;
 }
 .comic-dialog:after {
     border-bottom: 20px solid rgba(0, 0, 0, 0);
-    /* border-left: 35px solid #6C9ED9; */
-    /* border-left: 35px solid #0B9ABB; */
-    border-left: 35px solid #89B4BE;
     border-top: 0 solid rgba(0, 0, 0, 0);
     bottom: -20px;
     content: " ";
     height: 0;
-    left: 45px;
     position: absolute;
     width: 0;
+}
+.comic-dialog:nth-child(odd):after {
+    border-left: 35px solid #888;
+    left: 45px;
+}
+.comic-dialog:nth-child(even):after {
+    border-bottom: 20px solid rgba(0, 0, 0, 0);
+    border-top: 0 solid rgba(0, 0, 0, 0);
+    bottom: -20px;
+    content: " ";
+    height: 0;
+    position: absolute;
+    width: 0;
+
+    border-right: 35px solid #888;
+    right: 45px;
 }
 
 table.table-talks > tbody > tr > td:first-child {
