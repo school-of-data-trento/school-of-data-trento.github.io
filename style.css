@@ -94,6 +94,13 @@ section.first {
     margin-bottom: 20px;
     font-size: 120%;
 }
+
+section.first .well {
+    background: #0DB1DB;
+    color: #fff;
+    text-shadow: rgba(0,0,0,.5) 1px 1px 1px;
+}
+
 section:not(.first) > .container {
     background: #f8f8f8;
     /* background: #f8f8f8 url(img/grid.png) -1px -1px; */
