@@ -17,7 +17,7 @@ a {
 }
 
 .main-header {
-    background: #000 url(img/slate.jpg) repeat-y center center;
+    background: #000 url(../img/slate.jpg) repeat-y center center;
     color: #ddd;
     text-align: center;
     padding: 20px 0;
@@ -45,7 +45,8 @@ a {
 .main-header {
     color: #fff;
 }
-.main-header * {
+.main-header h1,
+.main-header .subtitle {
     transition: color ease 10s;
 }
 .main-header:hover h1 {
@@ -110,7 +111,7 @@ section:not(.first) > .container {
     padding: 120px 40px 20px;
     position: relative;
     font-size: 120%;
-    background: #fff url(img/paper.jpg);
+    background: #fff url(../img/paper.jpg);
 }
 
 section:not(.first) > .container > h2:first-of-type {
@@ -137,6 +138,15 @@ section:not(.first) > .container > h2:first-of-type {
     transform: rotate(-3deg);
     -moz-transform: rotate(-3deg);
     -webkit-transform: rotate(-3deg);
+
+    transition: transform ease 2s;
+    -webkit-transition: -webkit-transform ease 2s;
+    -moz-transition: -moz-transform ease 2s;
+}
+section:not(.first) > .container > h2:first-of-type:hover {
+    transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
 }
 /* section:not(.first) > .container { */
 /*     background: rgba(255, 255, 255, .4); */
@@ -223,6 +233,10 @@ table.table-talks > tbody > tr > td:last-child {
     color: #fff;
     text-shadow: rgba(0,0,0,.5) 1px 1px 1px;
 }
+table.table-talks > tbody > tr.break > td {
+    background: #ffd;
+}
+
 span[title] {
     text-decoration: underline;
     cursor: help;
@@ -263,5 +277,13 @@ span[title] {
 /* table.table-talks > tbody > tr:nth-child(10n+3) > td:last-child:after {border-top-color: #0f0;} */
 
 .table-talks .talk-title {
+    /* display: inline; */
     font-weight: bold;
 }
+.table-talks .speaker-name {
+    /* display: inline; */
+    font-style: italic;
+}
+/* .table-talks .speaker-name:before { */
+/*     content: " - "; */
+/* } */
