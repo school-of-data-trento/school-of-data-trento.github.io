@@ -153,17 +153,21 @@ section:not(.first) > .container > h2:first-of-type:hover {
 }
 
 .comic-dialog {
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.comic-dialog .inner {
     /* background: #6C9ED9; */
     /* background: #0B9ABB; */
     /* background: #89B4BE; */
-    background: #888;
+    /* background: #888; */
+    background: #aaa;
     color: #fff;
     padding: 10px 30px;
-    margin-bottom: 30px;
-    text-shadow: rgba(0,0,0,.5) 1px 1px 1px;
+    text-shadow: rgba(0,0,0,.8) 1px 1px 2px;
     border-radius: 5px;
-    position: relative;
-    margin-top: 20px;
+    display: inline-block;
 }
 .comic-dialog:after {
     border-bottom: 20px solid rgba(0, 0, 0, 0);
@@ -178,14 +182,14 @@ section:not(.first) > .container > h2:first-of-type:hover {
     text-align: left;
 }
 .comic-dialog:nth-child(odd):after {
-    border-left: 35px solid #888;
+    border-left: 35px solid #aaa;
     left: 45px;
 }
 .comic-dialog:nth-child(even) {
     text-align: right;
 }
 .comic-dialog:nth-child(even):after {
-    border-right: 35px solid #888;
+    border-right: 35px solid #aaa;
     right: 45px;
 }
 
