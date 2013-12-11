@@ -10,8 +10,17 @@ var parkingIcon = L.icon({
     popupAnchor: [0, -14]
 });
 
-var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/{key}/{styleId}/256/{z}/{x}/{y}.png',
-    cloudmadeAttribution = 'Map data &copy; 2013 OpenStreetMap contributors, Imagery &copy; 2012 CloudMade',
+var sdTrentoIcon = L.icon({
+    iconUrl: 'img/schoolofdata-logo_48x48.png',
+    iconSize: [32, 32],
+    iconAnchor: [0, 14],
+    popupAnchor: [0, -14]
+});
+
+var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/'+
+				   '{key}/{styleId}/256/{z}/{x}/{y}.png',
+    cloudmadeAttribution = 'Map data &copy; 2013 OpenStreetMap contributors, ' +
+                           'Imagery &copy; 2012 CloudMade',
     cloudmadeKey = 'd1127846b6af440e9bed6ac6d7d46d98';
 
 var minimal = L.tileLayer(cloudmadeUrl, {
@@ -20,27 +29,11 @@ var minimal = L.tileLayer(cloudmadeUrl, {
     key: cloudmadeKey});
 
 var map = L.map('map_canvas', {
-    center: new L.LatLng(46.0690555,11.1275797),
-    zoom: 15,
+    center: new L.LatLng(46.067423, 11.1285657),
+    zoom: 17,
     layers: [minimal],
     scrollWheelZoom: false
 });
-
-// var ggl = new L.Google();
-
-// var bingAttribution = "Map data &copy; 2013 OpenStreetMap contributors, " +
-//     "Imagery &copy; 2013 Microsoft Corporation, Bing, &copy; 2010 GeoEye, " +
-//     "&copy; 2010 TerraItaly, &copy; 2010 Blom",
-//     bingKey = 'AggYzpIFoBJd3Zx671A-O6V8RWue5cyuDgCNoQRnzFU3bedB5tSfpegsq1RB7kbD',
-//     bing = new L.BingLayer(bingKey, {
-//         attribution: bingAttribution,
-//     });
-
-// var baseMaps = {
-//     "Semplice": minimal,
-//     "Bing (sat)": bing,
-//     "Google Maps (sat)": ggl
-// };
 
 function onEachFeature(feature, layer) {
     var popupContent = "<b>Parcheggio pubblico</b><br />";
@@ -72,3 +65,16 @@ L.geoJson(parkings, {
     },
     onEachFeature: onEachFeature
 }).addTo(map);
+
+var infocontent = "<b>Contamination lab</b><br/>" +
+                  "Piazza Venezia, 41<br/>" +
+                  "Trento<br/>" +
+                  "<a href=\"http://mapq.st/1e42WFA\" title=\"Mapquest\">" +
+                  "Direzioni stradali con Mapquest</a> | " +
+                  "<a href=\"http://parking.openstreetmap.de/?zoom=17&lat=46.06689&lon=11.12792&layers=B00FT\"" +
+                  "title=\"parking.openstreetmap.de\">" +
+                  "Mappa dettagliata dei parcheggi</a> | " +
+                  "<a href=\"http://contaminationlabtrento.it/\" " +
+                  "title=\"Sito Web\">Sito Web</a></div>";
+L.marker([46.067423, 11.1285657], {icon: sdTrentoIcon}).addTo(map)
+                        .bindPopup(infocontent).openPopup();
