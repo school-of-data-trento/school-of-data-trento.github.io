@@ -76,13 +76,11 @@ a {
     border-radius: 0;
 }
 .main-footer {
-    /* margin-top: 20px; */
     background: #111;
     border-top: solid 10px #333;
     color: #ddd;
     padding: 10px 0;
     margin-top: 20px;
-    text-align: right;
 }
 
 section {
