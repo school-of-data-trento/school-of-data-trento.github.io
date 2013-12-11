@@ -132,7 +132,10 @@ section:not(.first) > .container > h2:first-of-type {
     left: -30px;
     top: 20px;
     position: absolute;
+
     transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
 }
 /* section:not(.first) > .container { */
 /*     background: rgba(255, 255, 255, .4); */
