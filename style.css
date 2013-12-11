@@ -81,6 +81,7 @@ a {
     color: #ddd;
     padding: 10px 0;
     margin-top: 20px;
+    text-align: right;
 }
 
 section {
@@ -215,7 +216,20 @@ table.table-talks > tbody > tr > td:first-child {
 }
 table.table-talks > tbody > tr > td:last-child {
     width: 160px;
+    font-weight: bold;
+    text-align: center;
+
+    background: #0DB1DB;
+    color: #fff;
+    text-shadow: rgba(0,0,0,.5) 1px 1px 1px;
 }
+span[title] {
+    text-decoration: underline;
+    cursor: help;
+}
+
+
+
 /* table.table-talks > tbody > tr > td:last-child > .box { */
 /*     background: #00f; */
 /*     border-color: #00f; */
